@@ -1,21 +1,43 @@
 {
   "name": "openclaw-twitter-skill",
-  "version": "1.0.0",
-  "description": "OpenClaw agent skill for stable automated Twitter posting using browser tools.",
+  "version": "1.2.0",
+  "description": "OpenClaw agent skill for stable automated Twitter (X) posting via browser tools. Standardized 5-step workflow with login check, content validation, screenshot confirmation, and error reporting.",
   "main": "index.js",
   "bin": {
     "oct-post": "index.js"
   },
+  "files": [
+    "index.js",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/test.js",
+    "prepublishOnly": "node tests/test.js"
   },
   "keywords": [
     "openclaw",
     "twitter",
     "x",
     "automation",
-    "skill"
+    "skill",
+    "agent",
+    "browser",
+    "social-media",
+    "posting"
   ],
-  "author": "xiaoxi",
-  "license": "MIT"
+  "author": "xiaoxi <xiaoxi@openclaw.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminlove520/openclaw-twitter-skill.git"
+  },
+  "homepage": "https://github.com/adminlove520/openclaw-twitter-skill#readme",
+  "bugs": {
+    "url": "https://github.com/adminlove520/openclaw-twitter-skill/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }

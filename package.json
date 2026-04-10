@@ -1,0 +1,21 @@
+{
+  "name": "openclaw-twitter-skill",
+  "version": "1.0.0",
+  "description": "OpenClaw agent skill for stable automated Twitter posting using browser tools.",
+  "main": "index.js",
+  "bin": {
+    "oct-post": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openclaw",
+    "twitter",
+    "x",
+    "automation",
+    "skill"
+  ],
+  "author": "xiaoxi",
+  "license": "MIT"
+}

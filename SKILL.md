@@ -35,6 +35,20 @@ Step 5 → Click Post → verify success
 - NEVER retry silently on failure.
 - NEVER modify user's content without explicit permission.
 
+## Optional TweetClaw Companion
+
+Keep this skill as the browser-confirmed posting workflow. Use [TweetClaw](https://github.com/Xquik-dev/tweetclaw) only when the user needs OpenClaw-native Xquik tools, endpoint discovery, account usage checks, DMs, monitors, draws, or extraction jobs.
+
+Install:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+Expose optional tools with `tools.alsoAllow: ["explore", "tweetclaw"]`.
+
+Keep credentials in OpenClaw plugin config. Do not bypass this skill's screenshot-confirmed posting rule; require explicit user confirmation before writes, DMs, monitors, or paid extraction jobs.
+
 ## Detailed Instructions
 
 ### Step 1: Open Compose Page

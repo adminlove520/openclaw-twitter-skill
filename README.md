@@ -51,6 +51,28 @@ oct-post info
 oct-post --help
 ```
 
+## Optional Structured X API Workflows
+
+This skill is intentionally browser-first for screenshot-confirmed X posting. Keep using it when a user wants visible browser review before posting.
+
+For structured OpenClaw tools, endpoint discovery, account usage checks, DMs, monitors, draws, or extraction jobs, install [TweetClaw](https://github.com/Xquik-dev/tweetclaw) separately:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+Expose the optional tools without replacing the normal OpenClaw tool profile:
+
+```json
+{
+  "tools": {
+    "alsoAllow": ["explore", "tweetclaw"]
+  }
+}
+```
+
+Store Xquik credentials only in OpenClaw plugin config. Require explicit user confirmation before visible writes, DMs, monitors, or paid extraction jobs.
+
 ## Content Guidelines
 
 | Rule | Spec |
